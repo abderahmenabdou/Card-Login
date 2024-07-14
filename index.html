@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive-card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- START CONTAINER -->
+    <div class="container">
+        <!-- START CONTENT -->
+        <div class="content">
+            <!-- START SLIDE LEFT -->
+            <div class="slide-left"></div>
+            <!-- END SLIDE LEFT -->
+            
+            <!-- START SLIDE RIGHT -->
+            <div class="slide-right">
+                <div id="form">
+                    <div>
+                        <label for="">cardholder name</label>
+                        <br>
+                        <input type="text" name="" id="card-name" placeholder="Name Card">
+                        <br>
+                        <span class="alert text" id="tName">entre your name</span>
+                    </div>
+                    <div>
+                        <label for="">card number</label>
+                        <br>
+                        <input maxlength="19" type="text" name="" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                        <br>
+                        <span class="alert text" id="tNumber">entre your number only</span>
+                    </div>
+                    <div class="date">
+                        <div class="exp">
+                            <label for="">exp date(mm/yy)</label>
+                            <br>
+                            <input type="text" name="" id="month" placeholder="MM">
+                            <input type="text" name="" id="year" placeholder="YY">
+                            <br><span class="alert text" id="tCvc">entre your number</span>
+                            
+                        </div>
+                        <div class="cvc">
+                            <label for="">cvc</label>
+                            <br>
+                            <input type="text" name="" id="cvc" placeholder="CVC">
+                            <br>
+                            <span class="alert text" id="tCvc">entre your number cvc</span>
+                        </div>
+                    </div>
+                    <button type="submit" id="submit">confirm</button>
+                </div>
+                <div class="final">
+                    <img src="/images/icon-complete.svg" alt="">
+                    <h2>thank you</h2>
+                    <p>we've added your card details</p>
+                    <button type="submit" id="continue">continue</button>
+                </div>
+            </div>
+            <!-- END SLIDE RIGHT -->
+        </div>
+        <!-- END CONTENT -->
+
+        <!-- START CARD -->
+        <div class="box">
+            <div class="card">
+                <div class="card-front">
+                    <img src="/images/card-logo.svg" alt="">
+                    <p id="txt-number">XXXX XXXX XXXX XXXX</p>
+                    <div class="txt">
+                        <h3 id="txt-name">Card Name</h3>
+                        <div>
+                            <span id="txt-month">MM /</span>
+                        <span id="txt-year">YY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <span id="txt-cvc">000</span>
+                </div>
+            </div>
+
+        </div>
+        <!-- END CARD -->
+    </div>
+    <!-- END CONTAINER -->
+
+    <script src="main.js"></script>
+</body>
+</html>
