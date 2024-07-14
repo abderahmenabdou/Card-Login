@@ -7,6 +7,9 @@
 .container{
     margin: auto 50px;
 }
+input{
+    padding: 5px 10px;
+}
 
 .content{
     width: 100%;
