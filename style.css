@@ -150,12 +150,15 @@ input{
     margin-bottom: 30px;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 768px) {
     .container{
         margin: 0;
     }
     .content{
         display: block;
+    }
+    h3{
+        font-size: 16px;
     }
     .content .slide-left{
         width: 100%;
@@ -167,18 +170,31 @@ input{
         position: relative;
         top: 25%;
     }
+    .box{
+        width: 90%;
+    }
     .box .card-back{
         margin: 0;
         position: absolute;
         top: -20px;
         left: 32px;
+        width: calc(100% - 20%);
     }
     .box .card-front{
         position: absolute;
         top: 97px;
-        left: -40px;
+        left: -25px;
         z-index: 9999;
+        width: calc(100% - 20%);
     }
+    .box .card-front img {
+        margin: 12px 30px;
+      }
+      .box .card-front p {
+
+        margin: 20px 35px;
+        font-size: 18px;
+      }
     .final{
         position: relative;
         top: 15%;
